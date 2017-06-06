@@ -1,0 +1,19 @@
+{
+  "name": "shashablogiiitm",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "angular-sanitize": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "stamplay-js-sdk": "^2.1.4",
+    "textAngular": "^1.5.16",
+    "ngToast": "ngtoast#^2.0.0"
+  }
+}
