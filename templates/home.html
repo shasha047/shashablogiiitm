@@ -1,0 +1,57 @@
+<h1>Latest Posts</h1>
+<div>
+    <div ng-include="structure/jumbotron.html"></div>
+    <!--
+    <h6>{{weatherData.main.temp}} Kelvin</h6>
+    <hr/>
+    <h6>{{weatherData.main.temp - 273.15}} degree centigrade</h6>
+    <hr/>
+    <h5>Maximum Temperature</h5>
+    <h6>{{weatherData.main.temp_max - 273.15}} degree centigrade</h6>
+    <hr/>
+    <h5>Minimum Temperature</h5>
+    <h6>{{weatherData.main.temp_min - 273.15}} degree centigrade</h6>
+    <hr/>
+    <h5>Coordinates</h5>
+    <h6>Latitude {{weatherData.coord.lat}}</h6>
+    <hr/>
+    <h6>Longitude {{weatherData.coord.lon}}</h6>
+    -->
+    <!--...................................Assignment..........................................-->
+    <!--<input type="text" ng-model="wtinfo">
+    <button type="submit" ng-click="getTemp()">
+            Get Temperature
+    </button>
+    <h4>Temprature of {{wtinfo}} </h4>
+    <h4>{{weatherData.main.temp -273.15}} degree centigrade</h4>-->
+    <!--..................................completed............................................-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel-group">
+                <div class="col-md-3 col-sm-4 col-xs-12" ng-repeat="blog in latestBlogs" style="height: 214px;">
+                    <div class="panel panel-default panel-primary">
+                        <div class="panel-heading">
+                            {{blog.title}}
+                        </div>
+                        <div class="panel-body" ng-bind-html="blog.content | htmlToPlainText | limitTo:100">
+
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <small>{{blog.actions.comments.length}} Comments</small>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <a class="btn btn-xs btn-primary pull-right" href="#/view/{{blog._id}}">Read Now</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--</div>-->
+</div>
