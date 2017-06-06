@@ -1,0 +1,10 @@
+{
+  "appId": "shashablogiiitm",
+  "apiKey": "bcff360fa99dcd3224878805cadcc4d0bbc93916d49ecc83a796c3860fcd6c60",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
